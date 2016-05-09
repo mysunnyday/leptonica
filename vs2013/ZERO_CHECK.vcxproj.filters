@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\leptonica\vs2013\CMakeFiles\e912c7634a4902d67dae177e6dc6a38a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DD1FC7C5-24DE-387D-B450-6C5545C9047F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

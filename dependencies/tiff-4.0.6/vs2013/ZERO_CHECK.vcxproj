@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D0B33607-CF43-337A-B71C-5DD5407B119A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\04b213a8517c38cc8dc896f33d281426\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/leptonica/dependencies/tiff-4.0.6 -BF:/leptonica/dependencies/tiff-4.0.6/vs2013 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/leptonica/dependencies/tiff-4.0.6/vs2013/CMakeFiles/04b213a8517c38cc8dc896f33d281426/generate.stamp.rule;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindLibLZMA.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\TestBigEndian.cmake;F:\leptonica\dependencies\tiff-4.0.6\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\build\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\addtiffo\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\xtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\iptcutil\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\mfs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\pds\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\ras\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\stream\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\tags\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\win_dib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\images\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff-4.pc.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tif_config.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tiffconf.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\port\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\test\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\tools\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\port\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\libtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\tools\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\test\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\addtiffo\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\xtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\iptcutil\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\mfs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\pds\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\ras\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\stream\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\tags\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\win_dib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\build\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\man\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\images\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\man\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/leptonica/dependencies/tiff-4.0.6 -BF:/leptonica/dependencies/tiff-4.0.6/vs2013 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/leptonica/dependencies/tiff-4.0.6/vs2013/CMakeFiles/04b213a8517c38cc8dc896f33d281426/generate.stamp.rule;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindLibLZMA.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\TestBigEndian.cmake;F:\leptonica\dependencies\tiff-4.0.6\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\build\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\addtiffo\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\xtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\iptcutil\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\mfs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\pds\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\ras\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\stream\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\tags\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\win_dib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\images\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff-4.pc.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tif_config.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tiffconf.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\port\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\test\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\tools\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\port\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\libtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\tools\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\test\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\addtiffo\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\xtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\iptcutil\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\mfs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\pds\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\ras\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\stream\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\tags\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\win_dib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\build\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\man\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\images\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\man\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/leptonica/dependencies/tiff-4.0.6 -BF:/leptonica/dependencies/tiff-4.0.6/vs2013 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/leptonica/dependencies/tiff-4.0.6/vs2013/CMakeFiles/04b213a8517c38cc8dc896f33d281426/generate.stamp.rule;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindLibLZMA.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\TestBigEndian.cmake;F:\leptonica\dependencies\tiff-4.0.6\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\build\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\addtiffo\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\xtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\iptcutil\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\mfs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\pds\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\ras\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\stream\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\tags\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\win_dib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\images\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff-4.pc.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tif_config.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tiffconf.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\port\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\test\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\tools\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\port\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\libtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\tools\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\test\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\addtiffo\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\xtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\iptcutil\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\mfs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\pds\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\ras\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\stream\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\tags\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\win_dib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\build\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\man\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\images\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\man\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/leptonica/dependencies/tiff-4.0.6 -BF:/leptonica/dependencies/tiff-4.0.6/vs2013 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/leptonica/dependencies/tiff-4.0.6/vs2013/CMakeFiles/04b213a8517c38cc8dc896f33d281426/generate.stamp.rule;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindLibLZMA.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\TestBigEndian.cmake;F:\leptonica\dependencies\tiff-4.0.6\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\build\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\addtiffo\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\dbs\xtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\iptcutil\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\mfs\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\pds\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\ras\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\stream\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\tags\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\contrib\win_dib\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\images\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\html\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff-4.pc.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tif_config.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\libtiff\tiffconf.h.cmake.in;F:\leptonica\dependencies\tiff-4.0.6\man\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\port\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\test\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\tools\CMakeLists.txt;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\3.4.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\leptonica\dependencies\tiff-4.0.6\vs2013\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\port\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\libtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\tools\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\test\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\addtiffo\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\dbs\xtiff\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\iptcutil\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\mfs\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\pds\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\ras\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\stream\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\tags\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\contrib\win_dib\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\build\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\man\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\images\CMakeFiles\generate.stamp;F:\leptonica\dependencies\tiff-4.0.6\vs2013\html\man\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,146 @@
+# Install script for directory: F:/leptonica/dependencies/tiff-4.0.6/libtiff
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/tiff")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
+
+# Set the component getting installed.
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiffd.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/Debug/tiffd.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiff.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/Release/tiff.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiff.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/MinSizeRel/tiff.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiff.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/RelWithDebInfo/tiff.lib")
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "C:/Program Files (x86)/tiff/include/tiff.h;C:/Program Files (x86)/tiff/include/tiffio.h;C:/Program Files (x86)/tiff/include/tiffvers.h;C:/Program Files (x86)/tiff/include/tiffconf.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/include" TYPE FILE FILES
+    "F:/leptonica/dependencies/tiff-4.0.6/libtiff/tiff.h"
+    "F:/leptonica/dependencies/tiff-4.0.6/libtiff/tiffio.h"
+    "F:/leptonica/dependencies/tiff-4.0.6/libtiff/tiffvers.h"
+    "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/tiffconf.h"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiffxxd.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/Debug/tiffxxd.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiffxx.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/Release/tiffxx.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiffxx.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/MinSizeRel/tiffxx.lib")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+     "C:/Program Files (x86)/tiff/lib/tiffxx.lib")
+    if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+    if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+        message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+    endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/lib" TYPE STATIC_LIBRARY FILES "F:/leptonica/dependencies/tiff-4.0.6/vs2013/libtiff/RelWithDebInfo/tiffxx.lib")
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "C:/Program Files (x86)/tiff/include/tiffio.hxx")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "C:/Program Files (x86)/tiff/include" TYPE FILE FILES "F:/leptonica/dependencies/tiff-4.0.6/libtiff/tiffio.hxx")
+endif()
+
