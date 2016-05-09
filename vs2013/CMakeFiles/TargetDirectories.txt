@@ -1,3 +1,0 @@
-F:/leptonica/vs2013/src/CMakeFiles/leptonica.dir
-F:/leptonica/vs2013/CMakeFiles/ALL_BUILD.dir
-F:/leptonica/vs2013/CMakeFiles/ZERO_CHECK.dir
